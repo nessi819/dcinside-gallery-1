@@ -61,7 +61,7 @@ const SUPABASE_URL = "https://mqxgdlcotatamhidwgvi.supabase.co";
 const SUPABASE_ANON_KEY = "sb_publishable_D9LlZ8qh4d46fVlcbYGZFg_bxx8osVB";
 const sbReady = SUPABASE_URL.startsWith("https://") && !SUPABASE_URL.includes("YOUR_") && !SUPABASE_ANON_KEY.includes("YOUR_");
 const sb = sbReady ? window.supabase.createClient(SUPABASE_URL,SUPABASE_ANON_KEY) : null;
-let posts=[], settings={name:"마이너 갤러리",description:"자유롭게 이야기를 나누는 공간입니다."};
+let posts=[], settings={name:"김재원 마이너 갤러리",description:"자유롭게 이야기를 나누는 공간입니다."};
 let isAdmin=false, currentTab="all", currentPage=1, currentPost=null, searchState={q:"",type:"all"};
 const $=id=>document.getElementById(id);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
